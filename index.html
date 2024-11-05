@@ -4,11 +4,13 @@
     <title>Contact Me</title>
 </head>
 <body>
-    <form action="https://formspree.io/f/mdkogolr" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
+    <form action="send_message.php" method="POST">
+        <label for="yourname">Your Name:</label><br>
+        <input type="text" id="yourname" name="yourname" required><br>
+        <label for="youremail">Your Email:</label><br>
+        <input type="email" id="youremail" name="youremail" required><br>
+        <label for="recipientemail">Recipient's Email:</label><br>
+        <input type="email" id="recipientemail" name="recipientemail" required><br>
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" required></textarea><br>
         <input type="submit" value="Send">
